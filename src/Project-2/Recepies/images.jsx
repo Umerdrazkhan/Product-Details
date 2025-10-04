@@ -15,11 +15,11 @@ const array=[
 const Images = () => {
   return (
     <>
-      <div className='grid grid-cols-3 mr-2 ml-2 gap-8 '>
+      <div className='grid grid-cols-2 xl:grid-cols-3 mr-2 ml-2 gap-8 '>
                {
                    array.map((i,id)=>(
                     (id==5)?(
-                        <div className='bg-green-800 relative overflow-hidden h-[410px] flex flex-col justify-between'>
+                        <div className='bg-green-800 relative overflow-hidden h-full flex-col justify-between hidden xl:flex'>
                             <p className='w-[200px] font-normal text-2xl text-center ml-24 text-white mt-10'>Don’t forget to eat healthy food</p>
                             <img src='images2/Star 1.png' className='absolute bottom-10 top-0'/>
                              <img src={i.img} className='absolute left-5 top-24'/>
@@ -27,17 +27,17 @@ const Images = () => {
 
                         </div>
                     ) :(
-                   <div className='w-[390px] h-[400px] bg-sky-100 flex flex-wrap rounded-2xl pl-2.5' key={id}>
+                   <div className='xl:w-full w-[190px] h-[250px] xl:h-[380px] bg-sky-100 flex flex-wrap rounded-2xl pl-2.5' key={id}>
                      <div className='relative'>
-                        <img src={i.img} className='rounded-2xl'/>
+                        <img src={i.img} className='rounded-2xl xl:w-full w-[170px]'/>
                      </div>
                      <div className={`bg-white h-12 w-12 rounded-full flex justify-center items-center absolute  ${i.left} ${i.right} shadow`}>
                          <BiHeart className='size-7 ' />
                      </div>
-                     <h3 className='font-semibold text-xl leading-6 w-[350px] ml-1'>{i.text} </h3>
-                     <div className='flex justify-start gap-x-4 mb-8 ml-1'>
-                       <p className='font-medium text-sm text-gray-800 flex items-center gap-x-2'><span><BiSolidStopwatch/></span>30 Minutes</p>
-                        <p  className='font-medium text-sm text-gray-800  flex items-center gap-x-2'><span><PiForkKnifeFill/></span>{i.p}</p>
+                     <h3 className='font-semibold xl:text-xl text-sm leading-7 xl:w-[350px] w-[180px]  ml-1'>{i.text} </h3>
+                     <div className='flex justify-start gap-x-3  xl:gap-x-4 mb-8 ml-1'>
+                       <p className='font-medium text-xs xl:text-sm text-gray-800 flex items-center gap-x-1 xl:gap-x-2'><span><BiSolidStopwatch/></span>30 Minutes</p>
+                        <p  className='font-medium text-xs xl:text-sm text-gray-800  flex items-center gap-x-1  xl:gap-x-2'><span><PiForkKnifeFill/></span>{i.p}</p>
                      </div>
                     </div>)
                   ))

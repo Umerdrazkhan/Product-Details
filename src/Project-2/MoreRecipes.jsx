@@ -14,7 +14,7 @@ const array=[
 const MoreRecipes = () => {
   return (
     <>
-     <div className='h-[865px] flex flex-col justify-between mt-36'>
+     <div className='h-[865px] xl:flex flex-col hidden justify-between mt-36'>
          <div className='flex justify-around'> 
             <h2 className='font-semibold text-5xl tracking-wide w-[540px] '>Try this delicious recipe to make your day</h2>
             <p className='leading-7 text-gray-800 w-[580px]'>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
