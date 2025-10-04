@@ -5,7 +5,7 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 import { MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 import Main1 from './main1';
 import Main2 from './main2';
-import Main3 from './image';
+import Main3 from './main3';
 const Main = () => {
   return (
     <>

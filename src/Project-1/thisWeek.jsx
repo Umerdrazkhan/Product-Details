@@ -1,5 +1,5 @@
 import React from 'react'
-import Main3 from './image'
+import Main3 from './main3'
 
 const ThisWeek = () => {
   return (

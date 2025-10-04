@@ -1,7 +1,7 @@
 import React from 'react'
 import { RiArrowRightSLine } from 'react-icons/ri';
 import { FiFacebook, FiInstagram } from 'react-icons/fi';
-import { FaInstagram } from 'react-icons/fa';
+//import { FaInstagram } from 'react-icons/fa';
 import { FiTwitter } from 'react-icons/fi';
 import { MdOutlineMarkEmailUnread } from 'react-icons/md';
 const Footer = () => {
@@ -19,9 +19,9 @@ const Footer = () => {
              </div>
              <div className='flex gap-x-3 mt-3'>
               <div className='bg-white h-8 w-8 rounded-full flex justify-center items-center'><FiFacebook className='size-4'/></div>
-              <div className='bg-white h-8 w-8 rounded-full flex justify-center items-center'><FiInstagram className='size-4'/></div>
-              <div className='bg-white h-8 w-8 rounded-full flex justify-center items-center'><FiTwitter className='size-4'/></div>
               <div className='bg-white h-8 w-8 rounded-full flex justify-center items-center'><MdOutlineMarkEmailUnread className='size-4'/></div>
+               <div className='bg-white h-8 w-8 rounded-full flex justify-center items-center'><FiInstagram className='size-4'/></div>
+                <div className='bg-white h-8 w-8 rounded-full flex justify-center items-center'><FiTwitter className='size-4'/></div>
              </div>
            </div>
            <div className='flex flex-wrap justify-evenly w-[870px]'>
