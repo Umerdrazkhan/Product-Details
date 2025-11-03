@@ -34,7 +34,7 @@ const Instagram = () => {
         </p>
       </div>
 
-      {/* ✅ Swiper for small screens only */}
+      {/* Swiper for small screens only */}
       <div className="block xl:hidden">
         <Swiper
           modules={[ Pagination]}
@@ -53,7 +53,7 @@ const Instagram = () => {
         <div className="custom-pagination flex justify-center mt-6 bg-amber-400"></div>
       </div>
 
-      {/* ✅ Flex layout for XL screens */}
+      {/*  Flex layout for XL screens */}
       <div className="hidden xl:flex justify-center gap-6 flex-wrap">
         {array.map((i, id) => (
           <PostCard key={id} data={i} />
@@ -70,7 +70,7 @@ const Instagram = () => {
   );
 };
 
-// ✅ Reusable Post Card Component
+//  Post Card Component
 const PostCard = ({ data }) => (
   <div className='w-[290px] h-[480px] bg-white flex flex-col justify-evenly shadow-md xl:ml-0 ml-14'>
     {/* Top bar */}
